@@ -1,0 +1,101 @@
+<<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Book a Guided Trip Today</title>
+    <link href="fishing.css" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V4BPBTPM2S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V4BPBTPM2S');
+</script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <img src="book.jpg">
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="fishing.html">Home</a></li>
+          <li><a href="rivers.html">Rivers</a></li>
+          <li><a href="photos.html">Photos and Videos</a></li>
+          <li><a href="book.html">Book a Guided Trip</a></li>
+          <li><a href="visit.html">Visit us on Social Media</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <fieldset>
+          <legend>Fill out this Form</legend>
+          <form method="post" action="submit.html">
+            <p><label for="fname">First Name: </label><br>
+              <input type="text" id="fname" name="fname">
+            </p>
+
+            <p><label for="lname">Last Name: </label><br>
+              <input type="text" id="lname" name="lname">
+            </p>
+
+            <p><label for="phone">Phone Number: </label><br>
+              <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p><label for="email">Email: </label><br>
+              <input type="email" id="email" name="email">
+            </p>
+
+            <p><label for="guide">Request a Guide: </label><br>
+              <input type="guide" id="guide" name="guide">
+            </p>
+            <p>What equipment do YOU HAVE?</p>
+            <p>
+              <input type="checkbox" id="rod" name="website" value="rod"><label for="rod">Fly Rod (5wt.- 6wt.)</label><br>
+              <input type="checkbox" id="flies" name="website" value="flies"><label for="flies">Personal Flies</label><br>
+              <input type="checkbox" id="drybag" name="website" value="drybag"><label for="drybag">Dry Bag</label><br>
+              <input type="checkbox" id="shoes" name="website" value="shoes"><label for="shoes">Water Shoes</label><br>
+              <input type="checkbox" id="reel" name="website" value="reel"><label for="reel">Reel with Line</label><br>
+            </p>
+            <p>Select the desired trip option </p>
+            <p>
+              <input type="radio" id="full" name="before" value="full"><label for="full">Full Day Fishing</label>
+              <input type="radio" id="half" name="before" value="half"><label for="half">Half Day Fishing</label>
+              <input type="radio" id="scenic" name="before" value="scenic"><label for="scenic">Scenic</label>
+            </p>
+            <p> What is your favorite day of the week to fish? </p>
+            <select>
+              <option value="None">Select a Day</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Thursday">Thursday</option>
+            </select>
+            <p>Please leave any dietary restrictions and lunch preferences</p>
+            <p><textarea name="comments" id="comments"></textarea></p>
+            <p><input type="submit" value="Submit" class="button"></p>
+          </form>
+        </fieldset>
+      </section>
+
+      <footer>
+        <b>Copyright &copy; 2021 Big Sky Fly Company</b>
+        <ul>
+            <li><a href="">Site Map</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Our Guarantee</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="" class="FooterLinks">Terms and Conditions</a></li>
+      </footer>
+    </div>
+    <!--Close Wrap-->
+  </body>
+
+  </html>

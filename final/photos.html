@@ -1,0 +1,109 @@
+<<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Photos and Videos our Guides</title>
+    <link href="fishing.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="slide1.jpg" style="width:100%">
+  <div class="text">Bryson Fisher</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="slide2.jpg" style="width:100%">
+  <div class="text">Joe Johnson</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="slide3.jpg" style="width:100%">
+  <div class="text">Brennon Fisher</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="fishing.html">Home</a></li>
+          <li><a href="rivers.html">Rivers</a></li>
+          <li><a href="photos.html">Photos and Videos</a></li>
+          <li><a href="book.html">Book a Guided Trip</a></li>
+          <li><a href="visit.html">Visit us on Social Media</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h1>Images of fish caught by Big Sky Fly Co Guides</h1>
+
+
+      </section>
+
+      <footer>
+        <b>Copyright &copy; 2021 Big Sky Fly Company</b>
+        <ul>
+            <li><a href="">Site Map</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Our Guarantee</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="" class="FooterLinks">Terms and Conditions</a></li>
+      </footer>
+    </div>
+    <!--Close Wrap-->
+  </body>
+
+  </html>
